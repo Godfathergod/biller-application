@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+}
+
+header h1 {
+    text-align: center;
+    margin: 0;
+}
+
+main {
+    padding: 16px;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 0 16px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-group a{
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #fff;
+}
+.signin-button {
+    background-color: #333;
+    margin-right: 16px;
+}
+
+.signup-button {
+    background-color: #4CAF50;
+}
