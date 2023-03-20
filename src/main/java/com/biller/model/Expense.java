@@ -1,4 +1,4 @@
-package com.example.biller_application.model;
+package com.biller.model;
 
 public class Expense {
 

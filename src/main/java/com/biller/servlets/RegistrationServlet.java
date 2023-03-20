@@ -1,10 +1,11 @@
-package com.example.biller_application.servlets;
+package com.biller.servlets;
 
-import com.example.biller_application.dao.UserDao;
-import com.example.biller_application.model.User;
+import com.biller.dao.UserDao;
+import com.biller.model.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -29,5 +30,8 @@ public class RegistrationServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        Cookie userCookie = new Cookie("username", user.getUsername());
+        resp.addCookie(userCookie);
+        resp.sendRedirect("home.jsp");
     }
 }

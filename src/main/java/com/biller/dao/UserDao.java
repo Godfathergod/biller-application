@@ -1,6 +1,6 @@
-package com.example.biller_application.dao;
+package com.biller.dao;
 
-import com.example.biller_application.model.User;
+import com.biller.model.User;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
