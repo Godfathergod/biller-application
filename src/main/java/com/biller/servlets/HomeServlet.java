@@ -45,7 +45,7 @@ public class HomeServlet extends HttpServlet {
         printWriter.println("<h1> User Page</h1>");
         printWriter.println("<div class=\"user-info\">");
         printWriter.println("<h2>" + userID + " " + username + "</h2>");
-        printWriter.println("<a href=\"#\">Вийти</a>");
+        printWriter.println("<a href=\"logout\">Log Out</a>");
         printWriter.println("</div>");
         printWriter.println("<div class=\"sessions\">");
         printWriter.println("</div>");

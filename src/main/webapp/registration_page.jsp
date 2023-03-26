@@ -29,6 +29,7 @@
             background-color: #3e8e41;
         }
     </style>
+    <link rel="script" href="reg.js">
 </head>
 <body>
 <h1>Реєстрація</h1>

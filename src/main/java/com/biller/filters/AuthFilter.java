@@ -20,7 +20,10 @@ public class AuthFilter implements Filter {
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         HttpServletRequest httpReq = (HttpServletRequest) servletRequest;
         HttpServletResponse httpResp = (HttpServletResponse) servletResponse;
-        if(isAuthenticatedUser(httpReq)) filterChain.doFilter(httpReq,httpResp);
+        if(isAuthenticatedUser(httpReq)
+                || httpReq.getServletPath().equals("/index.jsp")
+                || httpReq.getServletPath().equals("/registration_page.jsp")
+                || httpReq.getServletPath().equals("/authorization.jsp")) filterChain.doFilter(httpReq,httpResp);
         else httpResp.sendRedirect("index.jsp");
         System.out.println("FILTER");
     }

@@ -20,7 +20,7 @@
 <main>
     <h2 class="central element">Get Started</h2>
     <div class="button-group">
-        <a class="signin-button" href="authorization.jsp">Sign In</a>
+        <a class="signin-button" href="authorization.jsp" methods="z">Sign In</a>
         <a class="signup-button" href="registration_page.jsp">Sign Up</a>
     </div>
 </main>

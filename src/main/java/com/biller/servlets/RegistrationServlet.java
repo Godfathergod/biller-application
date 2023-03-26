@@ -31,6 +31,7 @@ public class RegistrationServlet extends HttpServlet {
             e.printStackTrace();
         }
         Cookie userCookie = new Cookie("username", user.getUsername());
+        userCookie.setMaxAge(86_400);
         resp.addCookie(userCookie);
         resp.sendRedirect("home.jsp");
     }
