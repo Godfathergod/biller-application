@@ -24,10 +24,6 @@ public class HomeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Cookie[] cookies = req.getCookies();
-        if(Arrays.stream(cookies).noneMatch(cookie -> cookie.getName().equals("username"))) {
-            resp.sendRedirect("index.jsp");
-            return;
-        }
         Cookie usernameCookie = Arrays.stream(cookies).filter(cookie -> cookie.getName().equals("username")).findFirst().get();
         String username = usernameCookie.getValue();
         int userID = -1;
